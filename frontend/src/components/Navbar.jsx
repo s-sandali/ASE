@@ -14,16 +14,12 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-brand">SNIKEI</Link>
+        <Link to="/" className="navbar-brand">STRIKER</Link>
         <div className="navbar-links">
-          <Link to="/products">Categories</Link>
           <Link to="/products">Shop</Link>
-          <Link to="/about">About</Link>
         </div>
         <div className="navbar-actions">
-          <button className="navbar-icon-btn">
-            <Search size={20} />
-          </button>
+
 
           <Link to="/cart" className="navbar-icon-btn navbar-cart-btn">
             <ShoppingCart size={20} />
