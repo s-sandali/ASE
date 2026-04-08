@@ -6,13 +6,13 @@ import shoe2 from '../assets/shoe2.jpg';
 import shoe3 from '../assets/shoe3.jpg';
 import shoe4 from '../assets/shoe4.jpg';
 import { Recycle, ShieldCheck, Truck, Globe, Star } from 'lucide-react';
-
+import PromoCarousel from '../components/PromoCarousel';
+import ReviewsCarousel from '../components/ReviewsCarousel';
 
 
 export default function Landing() {
   const [bestSellers, setBestSellers] = useState([]);
   const [activeTab, setActiveTab] = useState('sports');
-  const activeCol = COLLECTIONS.find((c) => c.id === activeTab);
 
   useEffect(() => {
     async function fetchProducts() {
@@ -120,6 +120,8 @@ export default function Landing() {
         </div>
       </section>
 
+
+
       {/* ── Best Sellers ───────────────────────────────── */}
       <section className="best-sellers-section">
         <h2 className="section-title">Best Sellers</h2>
@@ -146,6 +148,12 @@ export default function Landing() {
           ))}
         </div>
       </section>
+
+      {/* ── Promo Carousel ───────────────────────────────── */}
+      <PromoCarousel />
+
+      {/* ── Reviews Carousel ───────────────────────────────── */}
+      <ReviewsCarousel />
 
     </div>
   );
