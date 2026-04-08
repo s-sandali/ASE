@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import shoe1 from '../assets/shoe1.jpg';
+import shoe2 from '../assets/shoe2.jpg';
+import { Recycle, ShieldCheck, Truck, Globe } from 'lucide-react';
 
-const BRANDS = ['LOTTO', 'PUMA', 'VANS', 'NIKE', 'GUCCI', 'BATA', 'UMBRO', 'FILA'];
 
 const BEST_SELLERS = [
   { id: 'mens-sprint', name: "Men's Sprint Sports Shoe", price: '$190.90', emoji: '👟' },
@@ -106,43 +108,66 @@ export default function Landing() {
   return (
     <div className="landing">
 
-      {/* ── Hero ───────────────────────────────────────── */}
-      <section className="lp-hero">
-        <div className="lp-hero-text">
-          <span className="lp-eyebrow">New Arrivals 2025</span>
-          <h1>Step Into<br />Comfort &amp; Style</h1>
-          <p>
-            Discover our finest collection of shoes, crafted for everyday comfort,
-            high performance and modern fashion.
-          </p>
-          <div className="lp-hero-btns">
-            <Link to="/products" className="btn lp-btn-orange">Shop Now</Link>
-            <Link to="/products" className="btn lp-btn-ghost">Explore More</Link>
+      {/* ── New Hero ──────────────────────────────────── */}
+      <section className="new-hero-section">
+        <div className="new-hero-bg">
+          <img src={shoe2} alt="Shoes background" />
+        </div>
+        <div className="new-hero-overlay"></div>
+        <div className="new-hero-container">
+          <div className="new-hero-content">
+            <h1 className="new-hero-title">
+              Explore<br />Premium<br />Shoes
+            </h1>
+            <div className="new-hero-actions">
+              <Link to="/products" className="new-hero-btn btn-white">
+                Shop Now <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </Link>
+              <Link to="/products" className="new-hero-btn btn-outline">
+                Categories <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </Link>
+            </div>
+          </div>
+          <div className="new-hero-card">
+            <div className="new-hero-card-img">
+              <img src={shoe1} alt="New Arrival" />
+            </div>
+            <div className="new-hero-card-footer">
+              <Link to="/products">
+                Explore New Arrivals <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="lp-hero-visual">
-          <div className="lp-discount-badge">70%<br /><span>OFF</span></div>
-          <div className="lp-hero-shoe">👟</div>
+      </section>
+
+      {/* ── Features Banner ────────────────────────────── */}
+      <section className="features-banner">
+        <div className="features-banner-container">
+          <div className="feature-item">
+            <Recycle size={32} strokeWidth={1.5} />
+            <h3>Sustainable Materials</h3>
+            <p>We believe great style shouldn't come at the planet's expense.</p>
+          </div>
+          <div className="feature-item">
+            <ShieldCheck size={32} strokeWidth={1.5} />
+            <h3>Warranty Included</h3>
+            <p>Every pair comes with a hassle-free 6-month warranty</p>
+          </div>
+          <div className="feature-item">
+            <Truck size={32} strokeWidth={1.5} />
+            <h3>Delivery &amp; Shipping</h3>
+            <p>Your shoes will be dispatched within 1-2 business days</p>
+          </div>
+          <div className="feature-item">
+            <Globe size={32} strokeWidth={1.5} />
+            <h3>Eco-Friendly Fabrics</h3>
+            <p>Crafted with sustainability in mind, our shoes feature eco-friendly fabrics</p>
+          </div>
         </div>
       </section>
 
-      {/* ── Trust bar ──────────────────────────────────── */}
-      <div className="lp-trust-bar">
-        <div className="lp-trust-item"><span>🔒</span> Secure Payment</div>
-        <div className="lp-trust-item"><span>🎧</span> 24/7 Support</div>
-        <div className="lp-trust-item"><span>🚚</span> Fast Delivery</div>
-        <div className="lp-trust-item"><span>↩️</span> Easy Returns</div>
-      </div>
 
-      {/* ── Brands ─────────────────────────────────────── */}
-      <section className="lp-section">
-        <h2 className="lp-section-title">Trusted By Top Brands</h2>
-        <div className="lp-brands">
-          {BRANDS.map((b) => (
-            <span key={b} className="lp-brand">{b}</span>
-          ))}
-        </div>
-      </section>
 
       {/* ── Best Sellers ───────────────────────────────── */}
       <section className="lp-section lp-bg-light">
