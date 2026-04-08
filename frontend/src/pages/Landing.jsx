@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import shoe1 from '../assets/shoe1.jpg';
-import shoe2 from '../assets/shoe2.jpg';
-import shoe3 from '../assets/shoe3.jpg';
-import shoe4 from '../assets/shoe4.jpg';
+
 import { Recycle, ShieldCheck, Truck, Globe, Star } from 'lucide-react';
 import PromoCarousel from '../components/PromoCarousel';
 import ReviewsCarousel from '../components/ReviewsCarousel';
@@ -37,7 +34,7 @@ export default function Landing() {
       {/* ── New Hero ──────────────────────────────────── */}
       <section className="new-hero-section">
         <div className="new-hero-bg">
-          <img src={shoe2} alt="Shoes background" />
+          <img src="https://i.pinimg.com/1200x/63/2b/19/632b191b47cd866eba79174ab44ab100.jpg" alt="Shoes background" />
         </div>
         <div className="new-hero-overlay"></div>
         <div className="new-hero-container">
@@ -56,7 +53,7 @@ export default function Landing() {
           </div>
           <div className="new-hero-card">
             <div className="new-hero-card-img">
-              <img src={shoe1} alt="New Arrival" />
+              <img src="https://i.pinimg.com/1200x/44/88/65/448865f61a5d219fb8764f432a6646b9.jpg" alt="New Arrival" />
             </div>
             <div className="new-hero-card-footer">
               <Link to="/products">
@@ -99,7 +96,7 @@ export default function Landing() {
       {/* ── Promo Cards ────────────────────────────────── */}
       <section className="promo-cards-section">
         <div className="promo-cards-container">
-          <div className="promo-card" style={{ backgroundImage: `url(${shoe3})` }}>
+          <div className="promo-card" style={{ backgroundImage: `url('https://i.pinimg.com/736x/7e/b6/af/7eb6af38dae288b15b88a4abf350bdfb.jpg')` }}>
             <div className="promo-badge">20% OFF</div>
             <div className="promo-content">
               <h2>Explore All<br />Formal Shoes</h2>
@@ -108,7 +105,7 @@ export default function Landing() {
               </Link>
             </div>
           </div>
-          <div className="promo-card" style={{ backgroundImage: `url(${shoe4})` }}>
+          <div className="promo-card" style={{ backgroundImage: `url('https://media.fashionnetwork.com/cdn-cgi/image/fit=cover,width=440,height=248,format=auto/m/6dd2/8cfc/30d5/77d2/3067/38c3/e1cf/b84b/5644/3392/3392.jpg')` }}>
             <div className="promo-badge">25% OFF</div>
             <div className="promo-content">
               <h2>Grab The Latest<br />Running Shoes</h2>

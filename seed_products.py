@@ -26,7 +26,7 @@ def seed():
             "heel_type": "Flat Heel",
             "available_sizes": "S, M, L, XL, XXL",
             "weight": "1.3 kg",
-            "image_url": "/assets/shoe5.jpg"
+            "image_url": "https://i.pinimg.com/1200x/de/61/e3/de61e33fdd7a6e7f2c7bdef1f8ba9f20.jpg"
         },
         {
             "name": "Grvity Oxford Shoe",
@@ -40,7 +40,7 @@ def seed():
             "heel_type": "Block Heel",
             "available_sizes": "S, M, L, XL, XXL",
             "weight": "1.5 kg",
-            "image_url": "/assets/shoe6.jpg"
+            "image_url": "https://i.pinimg.com/736x/8f/37/d1/8f37d10529035f5ec5ba434f638a069d.jpg"
         },
         {
             "name": "Flexora Boot",
@@ -54,7 +54,7 @@ def seed():
             "heel_type": "Flat Heel",
             "available_sizes": "S, M, L, XL, XXL",
             "weight": "1.8 kg",
-            "image_url": "/assets/shoe7.jpg"
+            "image_url": "https://i.pinimg.com/1200x/e2/9d/ea/e29deab3081beb86dcea595ae53f485e.jpg"
         },
         {
             "name": "Boltrek Sports Shoe",
@@ -68,7 +68,7 @@ def seed():
             "heel_type": "Flat Heel",
             "available_sizes": "S, M, L, XL, XXL",
             "weight": "0.9 kg",
-            "image_url": "/assets/shoe8.jpg"
+            "image_url": "https://i.pinimg.com/736x/a3/7f/67/a37f672d2450ea71b25f6c73c22044df.jpg"
         },
         {
             "name": "Formal Movo Shoe",
@@ -82,7 +82,7 @@ def seed():
             "heel_type": "Block Heel",
             "available_sizes": "S, M, L, XL, XXL",
             "weight": "1.4 kg",
-            "image_url": "/assets/shoe9.jpg"
+            "image_url": "https://www.needledust.com/cdn/shop/files/DSC0088_4a1fa983-3fca-4baa-a298-6b0041adbf7c_600x600_crop_center.jpg?v=1754734196"
         },
         {
             "name": "Flexora High Neck",
@@ -96,7 +96,7 @@ def seed():
             "heel_type": "Flat Heel",
             "available_sizes": "S, M, L, XL, XXL",
             "weight": "1.3 kg",
-            "image_url": "/assets/shoe10.jpg"
+            "image_url": "https://i.pinimg.com/1200x/33/68/0d/33680d826e32891d6e1f6a6c30c00289.jpg"
         },
         {
             "name": "Runx Running Shoe",
@@ -110,7 +110,7 @@ def seed():
             "heel_type": "Flat Heel",
             "available_sizes": "S, M, L, XL, XXL",
             "weight": "0.8 kg",
-            "image_url": "/assets/shoe11.jpg"
+            "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6pWJkWfzl2D5c285vQUaWCdCxZiUuJ9rKsGKGwXyHQU0LlZHX"
         },
         {
             "name": "Yono Loafers",
@@ -124,7 +124,7 @@ def seed():
             "heel_type": "Flat Heel",
             "available_sizes": "S, M, L, XL, XXL",
             "weight": "1.1 kg",
-            "image_url": "/assets/shoe12.jpg"
+            "image_url": "https://i.pinimg.com/1200x/5a/3c/ee/5a3cee3137aeb0a6a542788182ae5e34.jpg"
         }
     ]
     

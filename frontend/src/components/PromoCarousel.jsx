@@ -1,26 +1,23 @@
 import { useState, useEffect } from 'react';
-import shoe13 from '../assets/shoe13.jpg';
-import shoe14 from '../assets/shoe14.jpg';
-import shoe15 from '../assets/shoe15.jpg';
 
 const SLIDES = [
   {
     id: 1,
-    image: shoe14,
+    image: 'https://i.pinimg.com/1200x/13/17/5a/13175a7be14ce6bb9da92a4c0deac33e.jpg',
     badge: 'Weekend Offer',
     title: '20% OFF!',
     subtitle: 'Summit Sneakers! Hottest\nDeals Of The Month'
   },
   {
     id: 2,
-    image: shoe15,
+    image: 'https://i.pinimg.com/736x/ba/d3/23/bad323bbf973cca110534879b8d0ed75.jpg',
     badge: 'Weekend Offer',
     title: '15% OFF!',
     subtitle: 'TurboTrainers! Grab The\nLatest Shoes'
   },
   {
     id: 3,
-    image: shoe13,
+    image: 'https://i.pinimg.com/1200x/05/ff/78/05ff786ad5ebf5f3384039ed3fc71a6b.jpg',
     badge: 'Weekend Offer',
     title: '10% OFF!',
     subtitle: 'Refined Classics!\nImported From USA'
@@ -54,7 +51,7 @@ export default function PromoCarousel() {
             </div>
           </div>
         ))}
-        
+
         <div className="promo-carousel-indicators">
           <div className="promo-indicators-pill">
             {SLIDES.map((_, index) => (
