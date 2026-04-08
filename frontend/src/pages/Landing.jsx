@@ -192,75 +192,9 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── Features ───────────────────────────────────── */}
-      <section className="lp-section lp-bg-light">
-        <h2 className="lp-section-title">Shoes That Do More Than Just<br />Look Good</h2>
-        <p className="lp-section-sub">
-          Our shoes are carefully crafted to give you consistent comfort, durability
-          and support for every step you take.
-        </p>
-        <div className="lp-features-grid">
-          {FEATURES.map((f) => (
-            <div key={f.id} className="lp-feature-card">
-              <div className="lp-feature-icon">{f.icon}</div>
-              <h4>{f.label}</h4>
-              <p>{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
 
-      {/* ── Popular Products ───────────────────────────── */}
-      <section className="lp-section">
-        <h2 className="lp-section-title">Popular Product</h2>
-        <p className="lp-section-sub">
-          Discover the footwear that has captured hearts, combining modern style
-          with everyday reliability.
-        </p>
-        <div className="lp-popular-grid">
-          {POPULAR.map((item) => (
-            <div key={item.id} className="lp-popular-card" style={{ background: item.bg }}>
-              <div className="lp-popular-shoe">{item.emoji}</div>
-              <div className="lp-popular-footer">
-                <strong>{item.cat}</strong>
-                <Link to="/products" className="btn lp-btn-orange lp-btn-sm">Shop Now</Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
-      {/* ── Testimonials ───────────────────────────────── */}
-      <section className="lp-section lp-bg-light">
-        <h2 className="lp-section-title">What Our Customers Say</h2>
-        <div className="lp-testimonials-grid">
-          {TESTIMONIALS.map((t) => (
-            <div key={t.id} className="lp-testimonial-card">
-              <div className="lp-stars">{'★'.repeat(t.stars)}</div>
-              <p>"{t.text}"</p>
-              <div className="lp-author">
-                <div className="lp-avatar">{t.name[0]}</div>
-                <div>
-                  <strong>{t.name}</strong>
-                  <span>{t.role}</span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
-      {/* ── Newsletter ─────────────────────────────────── */}
-      <section className="lp-newsletter">
-        <h2>Don't Sleep on the Next Drop</h2>
-        <p>
-          Sign up to get exclusive updates on all shoes available when they drop.
-        </p>
-        <form className="lp-newsletter-form" onSubmit={(e) => e.preventDefault()}>
-          <input type="email" placeholder="Enter your email address" />
-          <button type="submit" className="btn lp-btn-orange">Subscribe</button>
-        </form>
-      </section>
 
     </div>
   );
